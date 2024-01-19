@@ -8,10 +8,9 @@ dataSources:
     source:
       address: "0xB19584Be015c04cf6CFBF6370Fe94a58b7A38830"
       abi: Contract
-      startBlock: 4502500
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.7
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - NewReport
@@ -39,4 +38,7 @@ dataSources:
           handler: handleStakeWithdrawn
         - event: ValueRemoved(bytes32,uint256)
           handler: handleValueRemoved
-      file: ./src/contract.ts
+      file: ./src/mapping.ts
+
+
+

@@ -9,7 +9,7 @@ import {
 import { Bytes, BigInt, Address } from "@graphprotocol/graph-ts"
 import { NewReport } from "../generated/schema"
 import { NewReport as NewReportEvent } from "../generated/Contract/Contract"
-import { handleNewReport } from "../src/contract"
+import { handleNewReport } from "../src/mapping"
 import { createNewReportEvent } from "./contract-utils"
 
 // Tests structure (matchstick-as >=0.5.0)
